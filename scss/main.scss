@@ -1,0 +1,63 @@
+$bg-color: #222;
+$fg-color: #eee;
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+     height: 100%;
+}
+
+body {
+    background-color: $bg-color;
+         font-family: 'GlacialIndifferenceRegular', sans-serif;
+          overflow-y: scroll;
+             padding: 1rem;
+              height: 100%;
+               color: $fg-color;
+}
+
+input[type=text] {
+  background-color: $fg-color;
+     border-radius: 1rem;
+        text-align: center;
+           padding: 0 1rem;
+            border: none;
+             width: 50%;
+             color: $bg-color;
+}
+
+main {
+  text-align: center;
+      margin: 0 auto;
+       width: 40rem;
+}
+
+.article {
+  border-radius: .2rem;
+     box-sizing: content-box;
+     text-align: left;
+        padding: 1rem;
+         margin: 1rem;
+         border: 1px solid lighten($bg-color, 10%);
+}
+
+.article:hover {
+  border: .1rem solid lighten($bg-color, 20%);
+}
+
+h1, p {
+  margin: 0;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+            color: inherit;
+}
+
+.searchmatch {
+  font-weight: 700;
+}
